@@ -11,21 +11,20 @@
 </head>
 <body>
     
-<form class="form-box">
-    <h3>Log In</h3>
+<form class="form-box" onsubmit="return validation()">
+    <h3>Create Account</h3>
     <div class="form">
         <label for="Email">Email</label>
-        <input type="email" placeholder="Enter Email" name="email" required>
+        <input type="email" placeholder="Enter Email" name="email" id ="email" required>
 
         <label for="Password">Password</label>
         <input type="password" placeholder="Enter Password" name="password" required>
 
-        <button type="submit">Login</button>
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" placeholder="Re-enter Password" name="confirmPassword" required>
+
+        <button type="submit">Sign Up</button>
       
-        <div>
-            <a href="resetPassword.html">Forgot password?</a> 
-            <a href="createaccount.html">Create account</a>
-        </div>
     </div>
 </form>
 
